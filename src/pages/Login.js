@@ -14,7 +14,7 @@ const Login = () => {
     }, [name]);
 
     return (
-        <div>
+        <div className='App'>
             <form className='row g-2'>
                 <input
                     className='form-control text-center  border border-opacity-10'
