@@ -8,7 +8,7 @@ function App() {
   const name = JSON.parse(localStorage.getItem('name'));
 
   return (
-      <div className="App">
+      <div className="h-100 d-flex align-items-center justify-content-center">
        
        {
         name === null ||  name.length <= 0 ? 
