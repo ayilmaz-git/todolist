@@ -8,7 +8,6 @@ function TodoList({ todo, todoOperation, text, setText, isEdit, setIsEdit }) {
     const update = (todo) => {
         if (text.length > 2) {
             Edit(todoOperation, todo.id, { isCompleted: todo.isCompleted, id: todo.id, content: text })
-
         } else {
             alert("Content must be more than 3 words")
         }

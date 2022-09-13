@@ -39,7 +39,7 @@ const Main = ({ theme }) => {
                 setTodos(todos.map((todo) => todo.id === value.id ? value : todo));
                 break;
             case "edit":
-                setText(todos.map((todo) => todo.id === value.id ? value : todo));
+                setTodos(todos.map((todo) => todo.id === value.id ? value : todo));
                 break;
             case "delete":
                 setTodos(todos.filter((todo) => todo.id !== value));
