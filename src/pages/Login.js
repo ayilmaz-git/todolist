@@ -6,16 +6,19 @@ const Login = () => {
         const saved = localStorage.getItem("name");
         const initialValue = JSON.parse(saved);
         return initialValue || "";
-     
+
     });
 
-    useEffect(() => {
+    const handleLogin = ()=>{
         localStorage.setItem("name", JSON.stringify(name));
-    }, [name]);
+    }
+    useEffect(() => {
+        handleLogin()
+    }, []);
 
     return (
         <div className='App'>
-            <form className='row g-2'>
+            <form className='row g-2' onSubmit={handleLogin}>
                 <input
                     className='form-control text-center  border border-opacity-10'
                     type="text"
@@ -26,7 +29,7 @@ const Login = () => {
                     required
                 />
                 <input type="submit" className='btn btn-outline-success border border-opacity-10 rounded-2' value="Login"></input>
-            
+
             </form>
         </div>
     )

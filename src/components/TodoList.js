@@ -25,12 +25,7 @@ function TodoList({ todo, todoOperation, text, setText, isEdit, setIsEdit }) {
         <div>
             <li
                 style={{ border: "none" }}
-                className={theme === "dark"
-                    ?
-                    "list-group-item d-flex justify-content-between align-items-center bg-transparent text-white dark"
-                    :
-                    "list-group-item d-flex justify-content-between align-items-center bg-transparent"
-                }
+                className="list-group-item d-flex justify-content-between align-items-center bg-transparent"
                 key={todo.id}>
 
                 <div class="form-check form-switch">
