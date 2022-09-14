@@ -3,8 +3,6 @@ import '../assets/css/index.css';
 import { Delete, Edit, Put } from '../service/api';
 
 function TodoList({ todo, todoOperation, text, setText, isEdit, setIsEdit }) {
-    const theme = JSON.parse(localStorage.getItem('theme'));
-
     const update = (todo) => {
         if (text.length > 2) {
             Edit(todoOperation, todo.id, { isCompleted: todo.isCompleted, id: todo.id, content: text })
