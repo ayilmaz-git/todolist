@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import '../assets/css/index.css';
 import AddTodo from '../components/AddTodo';
 import TodoList from '../components/TodoList';
 import { Get } from '../service/api';

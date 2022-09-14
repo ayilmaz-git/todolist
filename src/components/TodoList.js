@@ -1,5 +1,4 @@
 import React from 'react'
-import '../assets/css/index.css';
 import { Delete, Edit, Put } from '../service/api';
 
 function TodoList({ todo, todoOperation, text, setText, isEdit, setIsEdit }) {
