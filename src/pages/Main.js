@@ -70,7 +70,7 @@ const Main = ({ theme }) => {
                 <ul className='list-group list-group-flush'>
                     {todos.length > 0 ? todos.map((todo) => (
                         <TodoList key={todo.id} todo={todo} text={text} setText={setText} isEdit={isEdit} setIsEdit={setIsEdit} todoOperation={todoOperation} />
-                    )) : <p className='alert alert-warning  bg-opacity-10 border border-opacity-10 rounded-2'>so, why do people use ToDo lists? anyway...</p>
+                    )) : <p className='alert alert-warning text-center bg-opacity-10 border border-opacity-10 rounded-2'>so, why do people use ToDo lists? anyway...</p>
                     }
                 </ul>
             </div>

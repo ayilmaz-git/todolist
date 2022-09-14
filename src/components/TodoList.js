@@ -27,9 +27,9 @@ function TodoList({ todo, todoOperation, text, setText, isEdit, setIsEdit }) {
                 style={{ border: "none" }}
                 className={theme === "dark"
                     ?
-                    "list-group-item d-flex justify-content-between align-items-center dark"
+                    "list-group-item d-flex justify-content-between align-items-center bg-transparent text-white dark"
                     :
-                    "list-group-item d-flex justify-content-between align-items-center"
+                    "list-group-item d-flex justify-content-between align-items-center bg-transparent"
                 }
                 key={todo.id}>
 
