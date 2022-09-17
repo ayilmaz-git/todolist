@@ -22,15 +22,20 @@ function Theme() {
   return (
     <div>
       <button
-        className='btn btn-sm border border-opacity-10'
+        className={theme === "dark"
+        ?
+        ("btn btn-sm  btn-warning  border-opacity-10")
+        :
+        ("btn btn-sm btn-outline-secondary border-opacity-10")
+      }
         style={{borderRadius:"50px"}}
         onClick={toggleTheme}
       >
         {theme === "dark"
           ?
-          (<i className="bi bi-brightness-high text-warning"> Light</i>)
+          (<i className="bi bi-brightness-high"> Light</i>)
           :
-          (<i className="bi bi-moon-stars text-primary"> Dark</i>)
+          (<i className="bi bi-moon-stars"> Dark</i>)
         }
       </button>
     </div>

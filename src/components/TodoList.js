@@ -44,7 +44,7 @@ function TodoList({ todo, todoOperation, text, setText, isEdit, setIsEdit }) {
                             />
                             <button
                                 onClick={() => update(todo)}
-                                className='btn btn-sm btn-outline-success m-2 border border-opacity-10 rounded-2'> <i class="bi bi-hand-thumbs-up"></i></button>
+                                className='btn btn-sm btn-outline-success m-2 rounded-3'> <i class="bi bi-hand-thumbs-up"></i></button>
                         </>
                     )
                     :
@@ -52,10 +52,10 @@ function TodoList({ todo, todoOperation, text, setText, isEdit, setIsEdit }) {
                 <div className='pl-2'>
                     <button
                         onClick={() => editNewContent(todo)}
-                        className='btn btn-sm btn-outline-warning m-2 border border-opacity-10 rounded-2'> <i class="bi bi-pencil-square"></i></button>
+                        className='btn btn-sm btn-outline-warning m-2 rounded-5'> <i class="bi bi-pencil-square"></i></button>
                     <button
                         onClick={() => Delete(todoOperation, todo.id)}
-                        className='btn btn-sm btn-outline-danger border border-opacity-10 rounded-2'> <i class="bi bi-trash3"></i></button>
+                        className='btn btn-sm btn-outline-danger rounded-5'> <i class="bi bi-trash3"></i></button>
                 </div>
             </li>
         </div>

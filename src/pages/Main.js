@@ -52,13 +52,13 @@ const Main = ({ theme }) => {
     }, []);
     return (
         <div className={`container ${theme} pt-5`}>
-         <button onClick={logout} className='btn btn-sm btn-outline-secondary border border-opacity-10 rounded-2'>
+         <button onClick={logout} className='btn btn-sm fw-semibold btn-outline-secondary rounded-2'>
                         Logout <i class="bi bi-box-arrow-right"></i>
                     </button>
-            <h3 className='text-center'>React Todo App</h3>
+            <h3 className='text-center fw-semibold'>React Todo App</h3>
             <div className='container d-flex justify-content-between align-items-center'>
                 <div className="row pt-5">
-                    <small className='d-inline-flex mb-3 px-2 py-1 fw-semibold text-success bg-success bg-opacity-10 border border-success border-opacity-10 rounded-2'>Welcome {name}</small>
+                    <small className='d-inline-flex mb-3 px-2 py-1 fw-semibold text-success bg-success bg-opacity-10 rounded-2'>Welcome {name}</small>
                 </div>
                 <div className="row pt-5">
                     <Theme />
