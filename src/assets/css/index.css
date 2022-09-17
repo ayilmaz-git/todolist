@@ -16,7 +16,11 @@ code {
   background-color: #333!important;
   color: #fff!important;
 }
-.dark>ul>li{
+.dark p{
+  background-color: #333!important;
+  color: #fff!important;
+}
+.dark .form-control{
   background-color: #333!important;
   color: #fff!important;
 }
